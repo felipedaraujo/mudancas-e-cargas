@@ -18,6 +18,9 @@
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+  <!-- Analytics -->
+  <script src="js/ga.js"></script>
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -44,9 +47,6 @@
       <li>
         <a href="#servicos">Serviços</a>
       </li>
-      <!--li>
-        <a href="#portifolio">Nosso Trabalho</a>
-      </li-->
       <li>
         <a href="#contato">Contato</a>
       </li>
@@ -78,7 +78,6 @@
   </section>
 
   <!-- Services -->
-  <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
   <section id="servicos" class="servicos bg-primary">
     <div class="container">
       <div class="row text-center">
@@ -152,48 +151,6 @@
       </div>
   </aside>
 
-  <!-- Portfolio -->
-  <!--section id="portfolio" class="portfolio">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-10 col-lg-offset-1 text-center">
-                  <h2>Nosso Trabalho</h2>
-                  <hr class="small">
-                  <div class="row">
-                      <div class="col-md-6">
-                          <div class="portfolio-item">
-                              <a href="#">
-                                  <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                              </a>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="portfolio-item">
-                              <a href="#">
-                                  <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                              </a>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="portfolio-item">
-                              <a href="#">
-                                  <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                              </a>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="portfolio-item">
-                              <a href="#">
-                                  <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section-->
-
   <!-- Call to Action -->
   <aside class="call-to-action bg-primary">
       <div class="container">
@@ -226,18 +183,15 @@
                       <li><h4><i class="fa fa-envelope-o fa-fw"></i><a href="mailto:mudancasecargas@gmail.com">mudancasecargas@gmail.com</a>
                       </h4></li>
                   </ul>
-                  <!--br>
+                  <br>
                   <ul class="list-inline">
                       <li>
-                          <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                          <a href="https://www.facebook.com/pages/Mudan%C3%A7as-Cargas/355339531212265" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                       </li>
                       <li>
-                          <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                          <a href="#top"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
                       </li>
-                      <li>
-                          <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                      </li>
-                  </ul-->
+                  </ul>
                   <hr class="small">
                   <p class="text-muted">Copyright &copy; Mudanças & Cargas 2015</p>
               </div>
@@ -247,40 +201,38 @@
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
-
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
-
   <!-- Custom Theme JavaScript -->
   <script>
-  // Closes the sidebar menu
-  $("#menu-close").click(function(e) {
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
       e.preventDefault();
       $("#sidebar-wrapper").toggleClass("active");
-  });
+    });
 
-  // Opens the sidebar menu
-  $("#menu-toggle").click(function(e) {
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
       e.preventDefault();
       $("#sidebar-wrapper").toggleClass("active");
-  });
+    });
 
-  // Scrolls to the selected menu item on the page
-  $(function() {
+    // Scrolls to the selected menu item on the page
+    $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-              if (target.length) {
-                  $('html,body').animate({
-                      scrollTop: target.offset().top
-                  }, 1000);
-                  return false;
-              }
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
           }
+        }
       });
-  });
+    });
   </script>
 
 </body>
