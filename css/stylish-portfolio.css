@@ -162,15 +162,19 @@ hr.small {
     -o-background-size: cover;
 }
 
+.red-font{
+    color: red;
+}
+
 /* Sobre */
 
 .sobre {
     padding: 50px 0;
 }
 
-/* Services */
+/* Serviços */
 
-.services {
+.servicos {
     padding: 50px 0;
 }
 
@@ -223,7 +227,7 @@ hr.small {
 /* Map */
 
 .map {
-    height: 500px;
+    height: 450px;
 }
 
 @media(max-width:768px) {
@@ -235,5 +239,5 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 30px 0;
 }
